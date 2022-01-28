@@ -10,7 +10,7 @@
             <p>
                 <b><%= post.message %> <br></b>
                 <em>posted by <%= post.postedBy.username %> on <%= post.createdAt %></5></em> <br>
-                liked by <%= post.likes %> people
+                liked by <%= post.likedBy.length %> people
             </p>
         </li>
     <% }); %>

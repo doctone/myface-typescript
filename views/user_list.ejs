@@ -6,8 +6,17 @@
 <ol>
     <% results.forEach(function(user) {%>
         <li>
-            <%= user.name %>
-            <img src="<%= user.profileImageUrl %>" alt="Profile image for <%= user.name %>" width="50" height="50">
+            <img 
+            src="<%= user.profileImageUrl %>" 
+            alt="Profile image for <%= user.name %>" 
+            width="50" 
+            height="50"> <br>
+            <b><%= user.name %></b>
+            <em>
+                <%= user.posts.length%> posts <br>
+                <%= user.likes.length%> likes <br>
+                <%= user.dislikes.length%> dislikes <br>
+            </em>
         </li>
     <% }); %>
 </ol>
