@@ -9,9 +9,20 @@
             <img src="<%= post.imageUrl %>" alt="Post image for <%= post.postedBy.name %>" width="60" height="60">
             <p>
                 <b><%= post.message %> <br></b>
-                <em>posted by <%= post.postedBy.username %> on <%= post.createdAt %></5></em> </p>
-                <p> <em>Liked</em> by <%= post.likedBy.length %> people</p>
-                <p> <em>Disliked</em> by <%= post.dislikedBy.length %> people</p>
+                <em>posted by <a href="../users/<%=post.postedBy.id%>"><%= post.postedBy.username %></a> on <%= post.createdAt %></5></em> </p>
+                    <%if (post.likedBy.length > 0) {%> 
+                        <p><%= post.likedBy[0].name %> 
+                        and <%= post.likedBy.length-1 %> others <a href="">like</a> this </p>
+                    <% } else { %>
+                        <p><a href="">Like</a></p>
+                        <% } %>
+               
+                    <%if (post.likedBy.length > 0) {%> 
+                        <p><%= post.likedBy[0].name %> 
+                        and <%= post.likedBy.length-1 %> others <a href="">dislike</a> this </p>
+                    <% } else { %>
+                        <p><a href="">Dislike</a></p>
+                        <% } %>
         </li>
     <% }); %>
 </ol>
