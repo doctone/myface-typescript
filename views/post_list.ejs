@@ -12,16 +12,16 @@
                 <em>posted by <a href="../users/<%=post.postedBy.id%>"><%= post.postedBy.username %></a> on <%= post.createdAt %></5></em> </p>
                     <%if (post.likedBy.length > 0) {%> 
                         <p><%= post.likedBy[0].name %> 
-                        and <%= post.likedBy.length-1 %> others <a href="">like</a> this </p>
+                        and <%= post.likedBy.length-1 %> others <button>like</button> this </p>
                     <% } else { %>
-                        <p><a href="">Like</a></p>
+                        <p><button>like</button></p>
                         <% } %>
                
                     <%if (post.likedBy.length > 0) {%> 
                         <p><%= post.likedBy[0].name %> 
-                        and <%= post.likedBy.length-1 %> others <a href="">dislike</a> this </p>
+                        and <%= post.likedBy.length-1 %> others <button>dislike</button> this </p>
                     <% } else { %>
-                        <p><a href="">Dislike</a></p>
+                        <p><button>dislike</button></p>
                         <% } %>
         </li>
     <% }); %>
