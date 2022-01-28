@@ -6,11 +6,15 @@
 <ol>
     <% results.forEach(function(user) {%>
         <li>
-            <img 
-            src="<%= user.profileImageUrl %>" 
-            alt="Profile image for <%= user.name %>" 
-            width="50" 
-            height="50"> <br>
+            <a href="/users/<%=user.id%>">
+
+                <img 
+                src="<%= user.profileImageUrl %>" 
+                alt="Profile image for <%= user.name %>" 
+                width="50" 
+                height="50">
+                <br>
+            </a>
             <b><%= user.name %></b>
             <em>
                 <%= user.posts.length%> posts <br>
