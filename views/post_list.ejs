@@ -15,6 +15,12 @@
         </li>
     <% }); %>
 </ol>
+<%if (next) { %>
+    <a href="<%= next %>">Next</a>
+<% } %>
+<%if (previous) { %>
+    <a href="<%= previous %>">Previous</a>
+<% } %>
 </body>
 <%- include('_footer') -%>
 </html>
