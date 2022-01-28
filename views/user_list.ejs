@@ -15,11 +15,11 @@
                 height="50">
                 <br>
             </a>
-            <b><%= user.name %></b>
+            <h3><b><%= user.name %></b></h3>
             <em>
-                <%= user.posts.length%> posts <br>
-                <%= user.likes.length%> likes <br>
-                <%= user.dislikes.length%> dislikes <br>
+                <h5> <%= user.posts.length%> posts </h5>
+                <h5><%= user.likes.length%> likes</h5>
+                <h5><%= user.dislikes.length%> dislikes</h5>
             </em>
         </li>
     <% }); %>
