@@ -9,9 +9,9 @@
             <img src="<%= post.imageUrl %>" alt="Post image for <%= post.postedBy.name %>" width="60" height="60">
             <p>
                 <b><%= post.message %> <br></b>
-                <em>posted by <%= post.postedBy.username %> on <%= post.createdAt %></5></em> <br>
-                liked by <%= post.likedBy.length %> people
-            </p>
+                <em>posted by <%= post.postedBy.username %> on <%= post.createdAt %></5></em> </p>
+                <p> <em>Liked</em> by <%= post.likedBy.length %> people</p>
+                <p> <em>Disliked</em> by <%= post.dislikedBy.length %> people</p>
         </li>
     <% }); %>
 </ol>
