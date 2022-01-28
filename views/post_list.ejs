@@ -6,10 +6,11 @@
 <ol>
     <% results.forEach(function(post) {%>
         <li>
-            <img src="<%post.imageUrl%>" alt="Post image for <%post.postedBy.name%>" width="60" height="60">
+            <img src="<%= post.imageUrl %>" alt="Post image for <%= post.postedBy.name %>" width="60" height="60">
             <p>
-                <%= post.message %>
-                <em>posted by <%post.postedBy.name%> on <%post.createdAt%></5></em>
+                <b><%= post.message %> <br></b>
+                <em>posted by <%= post.postedBy.username %> on <%= post.createdAt %></5></em> <br>
+                liked by <%= post.likes %> people
             </p>
         </li>
     <% }); %>

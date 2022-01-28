@@ -7,6 +7,7 @@
     <% results.forEach(function(user) {%>
         <li>
             <%= user.name %>
+            <img src="<%= user.profileImageUrl %>" alt="Profile image for <%= user.name %>" width="50" height="50">
         </li>
     <% }); %>
 </ol>
