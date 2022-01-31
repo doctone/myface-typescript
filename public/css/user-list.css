@@ -19,25 +19,16 @@ ul.user{
     top: 0;
     position: sticky;
     margin-left: 2.5em;
-    border: 0.1em solid #726b62;
+    /* border: 0.1em solid #726b62; */
     border-radius: 15px;
     width: 10em;
     margin-top: 2em;
+    text-align: center;
 }
-.heading-container:hover {
+/* .heading-container:hover {
     background: #726b62;
-}
+} */
 
 .profile-img {
     border-radius: 50%;
-}
-
-h1 {
-    margin-left: 1em;
-}
-
-@media only screen and (max-width: 600px) {
-      body {
-          font-size: 0.6em;
-      }
 }

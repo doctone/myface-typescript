@@ -1,30 +1,26 @@
 <html lang="en-gb">
 <%- include('_head') -%>
     <%- include('_header') -%>
-            <img src="<%= coverImageUrl %>" alt="Users cover image">
-            <h1>
-                <%= name %>
-            </h1>
-            <img src="<%= profileImageUrl %>" alt="Profile pic" width="100" height="100">
-
-            <li>
-                <em>
-                    <%= username %>
-                </em>
-            <li>
-                <%= posts.length %> posts,
-            </li>
-            <li>
-                <%= likes.length %> likes,
-            </li>
-            <li>
-                <%= dislikes.length %> dislikes
-            </li>
-            Contact </li>
-            <li>
-                <%= email %>
-            </li>
+    <body>
+            <div class="cover-container">
+                <img class='cover-image' src="<%= coverImageUrl %>" alt="Users cover image">
+            </div>
+            <div class="profile-container">
+                <div class='img-container'>
+                    <img class="profile-image"src="<%= profileImageUrl %>" alt="Profile pic" width="100" height="100">
+                </div>
+                <div class="user-heading">
+                    <h1><%= name %></h1>
+                    <li><%= username %></li>
+                    <li><%= email %></li>
+                </div>
+            </div>
+            <div class="user-info">
+                <%= posts.length %> posts</li>
+                <li><%= likes.length %> likes</li>
+                <li><%= dislikes.length %> dislikes</li>
+                <li>Contact</li>
+            </div>
         </body>
         <%- include('_footer') -%>
-
 </html>
