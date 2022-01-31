@@ -3,31 +3,30 @@
     <%- include('_header') -%>
 
         <body>
-            <h1>Users</h1>
+            <div class="heading-container"><h1>Users</h1></div>
             <ol>
                 <% results.forEach(function(user) {%>
-                    <li>
-                        <a href="/users/<%=user.id%>">
-                            <img 
-                            src="<%= user.profileImageUrl %>" 
-                            alt="Profile image for <%= user.name %>" 
-                            width="50"
-                            height="50">
-                            <br>
-                        </a>
-                        <h3><b>
-                                <%= user.name %>
-                            </b></h3>
-                        <em>
-                    <li>
-                        <%= user.posts.length%> posts </h5>
-                    <li>
-                        <%= user.likes.length%> likes</h5>
-                    <li>
-                        <%= user.dislikes.length%> dislikes</h5>
-                            </em>
-                    </li>
-                    <% }); %>
+                    <ul class='user'>
+                        <li>
+                            <div class="user-heading">
+                                <a href="/users/<%=user.id%>">
+                                    <img
+                                    class='profile-img' 
+                                    src="<%= user.profileImageUrl %>" 
+                                    alt="Profile image for <%= user.name %>" 
+                                    width="50"
+                                    height="50">
+                                    <br>
+                                </a>
+                                <div class="user-heading">
+                                    <h3 class='name'><b><%= user.name %></b></h3>
+                                </div>
+                            </div>
+                        <li><p class='user-info'><%= user.posts.length%> posts</p></li>
+                        <li><p class='user-info'><%= user.likes.length%> likes</p></li>
+                        <li><p class='user-info'><%= user.dislikes.length%> dislikes</p></li>
+                    </ul>
+                        <% }); %>
             </ol>
             <%if (next) { %>
                 <a href="<%= next %>">Next</a>

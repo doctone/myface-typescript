@@ -1,0 +1,43 @@
+ul.user{
+    list-style: none;
+    background-color: #323c48;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: 80vw;
+    border-radius: 15px;
+}
+.user:hover {
+    background-color: #3f4c5b;
+}
+
+.user-heading {
+    display: flex;
+    padding: 0.5em;
+}
+
+.heading-container {
+    top: 0;
+    position: sticky;
+    margin-left: 2.5em;
+    border: 0.1em solid #726b62;
+    border-radius: 15px;
+    width: 10em;
+    margin-top: 2em;
+}
+.heading-container:hover {
+    background: #726b62;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+h1 {
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+      body {
+          font-size: 0.6em;
+      }
+}
