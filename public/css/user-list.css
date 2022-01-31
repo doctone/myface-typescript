@@ -10,7 +10,7 @@ ul.user{
     background-color: #3f4c5b;
 }
 
-.user-heading {
+.user-list-heading {
     display: flex;
     padding: 0.5em;
 }
