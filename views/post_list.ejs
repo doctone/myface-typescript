@@ -43,12 +43,14 @@
                     </div>
                     <% }); %>
             </ol>
-            <%if (next) { %>
-                <a href="<%= next %>">Next</a>
-                <% } %>
-                    <%if (previous) { %>
-                        <a href="<%= previous %>">Previous</a>
-                        <% } %>
+            <div class="navigation">
+                <%if (previous) { %>
+                    <a class='previous' href="<%= previous %>">Previous</a>
+                    <% } %>
+                        <%if (next) { %>
+                            <a class='next' href="<%= next %>">Next</a>
+                            <% } %>
+            </div>
         </body>
         <%- include('_footer') -%>
 
