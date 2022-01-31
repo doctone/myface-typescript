@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import 'profile.css';
 @import 'user-list.css';
+@import 'posts.css';
 
 body {
     font-family: 'Poppins', sans-serif;
