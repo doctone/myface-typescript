@@ -3,20 +3,21 @@
     flex-wrap: wrap;
 }
 
-.post-container {
+.post-card {
     background-color: slategrey;
     border-radius: 15px;
-    margin-bottom: 1em;
     display: flex;
     flex-direction: column;
     height: 20em;
+    width: 80vw;
+    margin-bottom: 1em;
 }
 
 .post-header {
     margin-left: 1.3em;
-    background: rgb(20 27 46 / 56%);
     border-radius: 15px;
 }
+
 .like-buttons {
     display: flex;
     justify-content: space-around;
