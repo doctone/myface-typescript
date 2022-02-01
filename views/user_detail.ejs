@@ -15,11 +15,18 @@
                     <li><%= email %></li>
                 </div>
             </div>
+            <h3 class='posts-title'><%= name %>'s posts</h3>
             <div class="user-info">
-                <%= posts.length %> posts</li>
-                <li><%= likes.length %> likes</li>
-                <li><%= dislikes.length %> dislikes</li>
-                <li>Contact</li>
+                <% posts.forEach(post => { %> 
+                <div class="post-container">
+                   
+                    <div class="post-heading">
+                        <img src="<%= post.imageUrl %>" alt="post image">
+                    </div>
+                    <div class="post-info">
+                        <p class="post-message"><%= post.message %></p>
+                    </div>
+                </div> <% }) %>
             </div>
         </body>
         <%- include('_footer') -%>
