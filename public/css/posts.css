@@ -51,6 +51,7 @@
     padding-right: 0.6em;
     display: flex;
     flex-direction: column;
+    font-size: 0.8em;
 }
 
 .post-info form {
