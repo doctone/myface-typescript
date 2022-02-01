@@ -24,16 +24,17 @@
                                         <%= post.likedBy[0].name %>
                                             and <%= post.likedBy.length-1 %> others <b>like</b> this
                                     <% } %>
+                                    <div class="like-buttons">
                                         <form method="post" action="/posts/<%= post.id %>/like/">
                                             <button type="submit" class='btn'>like</button>
                                         </form>
+                                        <form method="post" action="/posts/<%= post.id %>/dislike/">
+                                        <button type="submit" class='btn'>dislike</button>
+                                    </div>
                                 <%if (post.dislikedBy.length> 0) {%>
                                        <p class="like-info"><%= post.dislikedBy[0].name %>
                                             and <%= post.likedBy.length-1 %> others <b>dislike</b> this </p>
                                     <% } %>
-                                
-                                        <form method="post" action="/posts/<%= post.id %>/dislike/">
-                                            <button type="submit" class='btn'>dislike</button></p>
                                             <p class='author-details'><em>posted by <a href="../users/<%=post.postedBy.id%>">
                                                 <%= post.postedBy.username %>
                                             </a> on <%= post.createdAt %>
