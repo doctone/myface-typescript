@@ -77,11 +77,6 @@
     color: white;
 }
 
-.navigation a:hover {
-    background: slategrey;
-    border-radius: 10px;
-}
-
 .author-details {
     font-size: 0.7em;
 }

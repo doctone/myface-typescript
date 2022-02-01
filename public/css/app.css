@@ -36,16 +36,26 @@ nav a:hover {
 .logo {
     background: grey;
     display: flex;
+    width: 7em;
     height: 60%;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     align-items: center;
+    justify-content: center;
 }
 
-.nav-item:hover {
+
+.nav-item {
+    width: 7em;
     height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
+}
+.nav-item:hover {
+    background: grey;
 }
 
 .img-header {
