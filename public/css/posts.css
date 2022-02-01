@@ -27,8 +27,16 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    border-width: 100%;
+    background-color: grey;
 }
+
+.like button {
+    border-bottom-left-radius: 15px;
+}
+.dislike button {
+    border-bottom-right-radius: 15px;
+}
+
 .button-corner form {
     width: 100%;
 }
@@ -62,6 +70,15 @@
     justify-content: center;
     align-items: center;
 }
+
+.button-corner form {
+    margin: 0;
+}
+
+.button-corner button {
+    height: 100%;
+}
+
 
 .like button:hover {
     background-color: rgba(60, 241, 14, 0.2);
