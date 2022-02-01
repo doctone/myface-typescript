@@ -8,6 +8,7 @@
                 <% results.forEach(function(user) {%>
                     <ul class='user'>
                         <li>
+                            <div class="user-container">
                             <div class="img-header">
                                 <img
                                     src="<%= user.coverImageUrl %>" 
@@ -15,19 +16,22 @@
                                     >
                             </div>
                             <div class="user-list-heading">
-                                <a href="/users/<%=user.id%>">
-                                    <img
-                                    class='profile-image' 
-                                    src="<%= user.profileImageUrl %>" 
-                                    alt="Profile image for <%= user.name %>" 
-                                    width="50"
-                                    height="50">
-                                    <br>
-                                </a>
-                                <div class="user-list-heading">
+                                <div class="img-container">
+                                    <a href="/users/<%=user.id%>">
+                                        <img
+                                        class='profile-image' 
+                                        src="<%= user.profileImageUrl %>" 
+                                        alt="Profile image for <%= user.name %>" 
+                                        width="50"
+                                        height="50">
+                                        <br>
+                                    </a>
+                                </div>
+                                <div>
                                     <h3 class='name'><b><%= user.name %></b></h3>
                                 </div>
                             </div>
+                        </div>
 
                         <li><p class='user-info'><%= user.posts.length%> posts</p></li>
                         <li><p class='user-info'><%= user.likes.length%> likes</p></li>
