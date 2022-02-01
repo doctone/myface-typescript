@@ -6,8 +6,6 @@
 .post-card {
     background-color: slategrey;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
     height: 20em;
     width: 80vw;
     margin-bottom: 1em;
@@ -21,6 +19,7 @@
 .like-buttons {
     display: flex;
     justify-content: space-around;
+    justify-self: flex-end;
 }
 
 .btn {
@@ -56,6 +55,11 @@
 
 .post-info form {
     padding: 0;
+}
+
+.post-list li {
+    display: flex;
+    flex-direction: column;
 }
 
 .like-info {
@@ -108,8 +112,8 @@ a:visited {
     color: inherit;
 }
 
-@media screen and (min-width: 400px) {
-    .post-container {
+@media screen and (min-width: 330px) {
+    .post-card {
         margin-right: 1em;
         width: 13em;
         height: 25em;
