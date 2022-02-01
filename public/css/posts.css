@@ -40,6 +40,7 @@
 
 .post-info {
     padding-left: 1em;
+    padding-right: 0.6em;
     display: flex;
     flex-direction: column;
 }
@@ -62,11 +63,11 @@
     align-items: center;
 }
 
-.like:hover {
-    background-color: rgba(60, 241, 14, 0.5);
+.like button:hover {
+    background-color: rgba(60, 241, 14, 0.2);
 }
-.dislike:hover {
-    background-color: rgba(255, 0, 0, 0.5);
+.dislike button:hover {
+    background-color: rgba(255, 0, 0, 0.2);
 
 }
 
