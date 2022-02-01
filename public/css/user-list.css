@@ -29,6 +29,14 @@ ul.user{
     background: #726b62;
 } */
 
-.profile-img {
+/* .profile-image {
     border-radius: 50%;
+} */
+ol {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    padding: 0;
 }
