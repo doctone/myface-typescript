@@ -14,6 +14,7 @@ ul.user{
 .user-list-heading {
     display: flex;
     padding: 0.5em;
+    position: absolute;
 }
 
 .heading-container {
