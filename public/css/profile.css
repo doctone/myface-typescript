@@ -9,11 +9,12 @@ li {
 }
 .profile-container {
     display: flex;
-    justify-content: center;
-    margin-left: 4em;
+    justify-content: flex-start;
+    /* margin-left: 4em; */
     position: absolute;
-    top: 12em;
-    max-width: 50vw;
+    top: 21em;
+    width: 100vw;
+    background: rgba(37, 42, 56, 0.56);
 }
 .profile-image {
     border-radius: 50%;
@@ -22,7 +23,7 @@ li {
 .user-heading {
     display: flex;
     flex-direction: column;
-    background: rgba(37, 42, 56, 0.56);
+    /* background: rgba(37, 42, 56, 0.56); */
     font-size: 1em;
     padding-right: 3em;
 }

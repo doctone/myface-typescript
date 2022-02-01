@@ -50,6 +50,7 @@ nav a:hover {
 
 .img-header {
     overflow: hidden;
+    position: relative;
 }
 .img-header img {
     width: 100%;
@@ -57,4 +58,4 @@ nav a:hover {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     object-fit: cover;
-}
+    }
