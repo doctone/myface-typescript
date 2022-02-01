@@ -15,12 +15,20 @@ body {
 nav {
     background-color: #222732;
     width: 100%;
-    margin: 0;
     padding-left: 2em;
     position: sticky;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    margin-top: 2em;
+    align-items: center;
 }
 nav a {
     text-decoration: none;
     color: white;
-    margin-left: 2em;
+}
+
+nav a:local-link {
+    background-color: slategrey;
+    border: 15px;
 }

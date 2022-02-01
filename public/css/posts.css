@@ -14,10 +14,15 @@
 }
 
 .post-header {
-    margin-left: 2.5em;
+    margin-left: 1.3em;
+    background: rgb(20 27 46 / 56%);
+    border-radius: 15px;
 }
-
-
+.btn {
+    background: #222732;
+    color: white;
+    border-radius: 10px;
+}
 .img-header {
     overflow: hidden;
 }
@@ -41,7 +46,6 @@
 }
 
 .post-info form {
-    align-self: center;
     padding: 0;
 }
 
@@ -54,6 +58,15 @@
     text-decoration: none;
     font-size: 2em;
     color: white;
+}
+
+.navigation a:hover {
+    background: slategrey;
+    border-radius: 10px;
+}
+
+.author-details {
+    font-size: 0.7em;
 }
 .navigation {
     display: flex;
