@@ -28,7 +28,7 @@ nav a {
     color: white;
 }
 
-nav a:local-link {
+nav a:hover {
     background-color: slategrey;
-    border: 15px;
+    border-width: 4em;
 }
