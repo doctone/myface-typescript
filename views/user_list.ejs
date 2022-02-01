@@ -8,6 +8,12 @@
                 <% results.forEach(function(user) {%>
                     <ul class='user'>
                         <li>
+                            <div class="img-header">
+                                <img
+                                    src="<%= user.coverImageUrl %>" 
+                                    alt="Cover image for <%= user.name %>" 
+                                    >
+                            </div>
                             <div class="user-list-heading">
                                 <a href="/users/<%=user.id%>">
                                     <img
