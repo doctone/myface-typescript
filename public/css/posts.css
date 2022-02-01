@@ -6,7 +6,6 @@
 .post-container {
     background-color: slategrey;
     border-radius: 15px;
-    padding-bottom: 1em;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
@@ -24,9 +23,14 @@
 }
 
 .btn {
-    background: #222732;
-    color: white;
-    border-radius: 10px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-width: 100%;
+}
+.button-corner form {
+    width: 100%;
 }
 
 .title-details p {
@@ -47,6 +51,23 @@
 .like-info {
     font-size: 0.8em;
     margin: 0;
+}
+
+.button-corner {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like:hover {
+    background-color: rgba(60, 241, 14, 0.5);
+}
+.dislike:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+
 }
 
 .navigation a {
