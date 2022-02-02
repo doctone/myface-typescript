@@ -1,0 +1,67 @@
+nav {
+    background-color: #222732;
+    width: 100%;
+    padding-left: 0.5em;
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    padding: 0;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.logo {
+    background: grey;
+    display: flex;
+    width: 7em;
+    height: 60%;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav-item {
+    display: flex;
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 25px;
+    text-decoration: none;
+    color: #818181;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 1s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.nav-item:hover {
+    background: rgb(43, 42, 42);
+}
+
+.top-nav {
+    overflow: hidden;
+    position: relative;
+}
+
+.icon {
+    z-index: 2;
+}
+

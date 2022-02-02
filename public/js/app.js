@@ -27,9 +27,11 @@ function whenClicked() {
 }
 function displayNav() {
     const links = document.querySelector(".nav-item");
-    if (links.style.display === "block") {
-      links.style.display = "none";
+    if (!links.classList.contains('clicked')) {
+        links.style.width = "40vw";
+        links.classList.add('clicked');
     } else {
-      links.style.display = "block";
-    }
+        links.classList.remove('clicked');
+        links.style.width = "0px";
+        }
   }
