@@ -12,9 +12,14 @@ ul.user{
 }
 
 .user-list-heading {
+
     display: flex;
-    padding: 0.5em;
     position: absolute;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    top: 6em;
+    background-color: rgba(37, 42, 56, 0.56);
 }
 
 .heading-container {
@@ -38,4 +43,14 @@ ol {
     flex-direction: row;
     align-items: stretch;
     padding: 0;
+}
+.user-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80vw;
+    /* calc(100% - 16em); */
+    /* top: 3em; */
+    background-color: rgba(37, 42, 56, 0.56);
 }
