@@ -27,20 +27,34 @@ function whenClicked() {
 }
 function displayNav() {
     const links = document.querySelector(".nav-item");
+    const icon = document.querySelector("i");
     if (!links.classList.contains('clicked')) {
         links.style.width = "40vw";
+        // links.classList.toggle('fa-times');
+        links.classList.add('fa-close');
         links.classList.add('clicked');
-        const icon = document.querySelector('.icon')
+        links.classList.remove('fa-bars');
 
-        let newIcon = document.createElement('i');
-        newIcon.classList.add('fas fa-times');
-        icon.appendChild(newIcon);
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-close');
+        
+        // const icon = document.querySelector('.icon')
+
+        // let newIcon = document.createElement('i');
+        // newIcon.classList.add('fa-times');
+        // icon.appendChild(newIcon);
 
 
     } else {
+        // links.classList.toggle('fa-bars');
         links.classList.remove('clicked');
+        links.classList.remove('fa-close');
+        links.classList.add('fa-bars');
         links.style.width = "0px";
-        const icon = document.querySelector('.icon')
-        icon.innerHTML = `<i class="fa fa-bars"></i>`
+
+        icon.classList.remove('fa-close');
+        icon.classList.add('fa-bars')
+        // const icon = document.querySelector('.icon')
+        // icon.innerHTML = `<i class="fa-bars"></i>`
         }
   }
