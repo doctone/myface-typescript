@@ -4,11 +4,14 @@
 }
 
 .post-card {
-    background-color: slategrey;
+    background-color: #323c48;
     border-radius: 15px;
     height: 20em;
     width: 80vw;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .post-header {
@@ -28,15 +31,21 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-color: #222732;
     color: white;
 }
 
 .like button {
     border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(60, 241, 14, 0.1);
 }
 .dislike button {
     border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgba(241, 40, 14, 0.1);
 }
 
 .title-details p {
@@ -76,6 +85,7 @@
     font-size: 0.6em;
     display: flex;
     align-items: center;
+    border: none;
 }
 
 
@@ -113,10 +123,10 @@ a:visited {
     }
 }
 
-.cliked-like {
+/* .clicked-like {
     background-color: greenyellow;
 }
 
-.cliked-dislike {
+.clicked-dislike {
     background-color: red;
-}
+} */
