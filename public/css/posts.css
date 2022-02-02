@@ -20,6 +20,7 @@
     display: flex;
     justify-content: space-around;
     justify-self: flex-end;
+    height: 2em;
 }
 
 .btn {
@@ -28,6 +29,7 @@
     display: flex;
     justify-content: center;
     background-color: grey;
+    color: white;
 }
 
 .like button {
@@ -113,7 +115,7 @@ a:visited {
     color: inherit;
 }
 
-@media screen and (min-width: 330px) {
+@media screen and (min-width: 300px) {
     .post-card {
         margin-right: 1em;
         width: 13em;
