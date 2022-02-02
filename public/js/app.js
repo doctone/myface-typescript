@@ -30,8 +30,17 @@ function displayNav() {
     if (!links.classList.contains('clicked')) {
         links.style.width = "40vw";
         links.classList.add('clicked');
+        const icon = document.querySelector('.icon')
+
+        let newIcon = document.createElement('i');
+        newIcon.classList.add('fas fa-times');
+        icon.appendChild(newIcon);
+
+
     } else {
         links.classList.remove('clicked');
         links.style.width = "0px";
+        const icon = document.querySelector('.icon')
+        icon.innerHTML = `<i class="fa fa-bars"></i>`
         }
   }

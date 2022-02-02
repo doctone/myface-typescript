@@ -1,5 +1,6 @@
 .cover-image {
     height: 30vh;
+    width: 100vw;
 }
 li {
     list-style: none;
