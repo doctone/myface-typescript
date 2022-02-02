@@ -39,10 +39,6 @@
     border-bottom-right-radius: 15px;
 }
 
-.button-corner form {
-    width: 100%;
-}
-
 .title-details p {
     margin: 0.5em;
     font-size: 1.2em;
@@ -54,10 +50,6 @@
     display: flex;
     flex-direction: column;
     font-size: 0.8em;
-}
-
-.post-info form {
-    padding: 0;
 }
 
 .post-list li {
@@ -79,12 +71,11 @@
     align-items: center;
 }
 
-.button-corner form {
-    margin: 0;
-}
-
 .button-corner button {
     height: 100%;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -93,7 +84,6 @@
 }
 .dislike button:hover {
     background-color: rgba(255, 0, 0, 0.2);
-
 }
 
 .navigation a {
@@ -121,4 +111,12 @@ a:visited {
         width: 13em;
         height: 25em;
     }
+}
+
+.cliked-like {
+    background-color: greenyellow;
+}
+
+.cliked-dislike {
+    background-color: red;
 }
