@@ -32,8 +32,9 @@ nav a:hover {
 
 
 .nav-item {
+    box-sizing: border-box;
     display: flex;
-    height: 100%; /* 100% Full-height */
+    height: 100vh; /* 100% Full-height */
     width: 0px; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -41,7 +42,8 @@ nav a:hover {
     right: 0;
     background-color: #111; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
+    padding-top: 25vh;
+    padding-bottom: 25vh; /* Place content 60px from the top */
     flex-direction: column;
     justify-content: space-between;
     font-size: 25px;
@@ -50,6 +52,10 @@ nav a:hover {
     align-items: center;
     justify-content: space-around;
     transition-duration: 1s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.nav-item-sub-link {
+    font-size: 15px;
 }
 
 .nav-item:hover {
