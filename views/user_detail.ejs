@@ -17,6 +17,17 @@
             </div>
             <div class="user-info">
                 <%= posts.length %> posts</li>
+                <div class="user-post-info">
+                    <% posts.forEach(function(post) { %>
+                    <li><%= post.message %></li>
+                    <li><img class="post"
+                        alt="post image"
+                        width="50"
+                        height="50"
+                        src="<%= post.imageUrl %>"/></li>
+                    <li>Posted on <%= post.createdAt %></li>
+                <% }); %>
+                </div>
                 <li><%= likes.length %> likes</li>
                 <li><%= dislikes.length %> dislikes</li>
                 <li>Contact</li>

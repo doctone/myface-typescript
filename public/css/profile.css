@@ -53,3 +53,9 @@ div.user-heading {
 .user-info {
     margin-top: 3em;
 }
+.user-post-info {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color: #323c48;
+}
