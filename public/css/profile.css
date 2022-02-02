@@ -61,7 +61,7 @@ div.user-heading {
     flex-direction: column;
 }
 
-.card {
+.user-post-card {
     background: #323c48;
     margin-bottom: 1em;
     border-radius: 15px;

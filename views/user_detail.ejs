@@ -15,12 +15,17 @@
                     <li><%= email %></li>
                 </div>
             </div>
-            <h3 class='posts-title'><%= name %>'s posts</h3>
+            <h3 
+                class='posts-title'
+                id="users-posts"
+                onclick="whenClicked()">
+                <%= name %>'s posts
+            </h3>
             <div class="user-info">
                 <%= posts.length %> posts</li>
                 <div class="user-post-info">
                     <% posts.forEach(function(post) { %>
-                    <div class="card">
+                    <div class="user-post-card">
                         <li><%= post.message %></li>
                     <li><img class="post"
                         alt="post image"
