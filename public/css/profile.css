@@ -56,7 +56,7 @@ div.user-heading {
     margin-top: 3em;
 }
 .user-post-info {
-    padding-left: 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
 }
