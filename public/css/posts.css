@@ -74,6 +74,8 @@
 .button-corner button {
     height: 100%;
     font-size: 0.6em;
+    display: flex;
+    align-items: center;
 }
 
 
