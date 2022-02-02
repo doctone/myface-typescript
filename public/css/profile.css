@@ -59,5 +59,10 @@ div.user-heading {
     padding-left: 1em;
     display: flex;
     flex-direction: column;
-    background-color: #323c48;
+}
+
+.card {
+    background: #323c48;
+    margin-bottom: 1em;
+    border-radius: 15px;
 }
