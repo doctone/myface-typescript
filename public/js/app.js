@@ -34,27 +34,15 @@ function displayNav() {
         links.classList.add('fa-close');
         links.classList.add('clicked');
         links.classList.remove('fa-bars');
-
         icon.classList.remove('fa-bars');
         icon.classList.add('fa-close');
-        
-        // const icon = document.querySelector('.icon')
-
-        // let newIcon = document.createElement('i');
-        // newIcon.classList.add('fa-times');
-        // icon.appendChild(newIcon);
-
-
     } else {
         // links.classList.toggle('fa-bars');
         links.classList.remove('clicked');
         links.classList.remove('fa-close');
         links.classList.add('fa-bars');
         links.style.width = "0px";
-
         icon.classList.remove('fa-close');
         icon.classList.add('fa-bars')
-        // const icon = document.querySelector('.icon')
-        // icon.innerHTML = `<i class="fa-bars"></i>`
         }
   }
